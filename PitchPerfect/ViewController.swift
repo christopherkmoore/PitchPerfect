@@ -18,7 +18,6 @@ class RecordsSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder: AVAudioRecorder!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.enabled = false

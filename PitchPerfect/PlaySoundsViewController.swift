@@ -21,6 +21,8 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var rabbitButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    
+    
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
@@ -57,9 +59,10 @@ class PlaySoundsViewController: UIViewController {
     
 
     override func viewDidLoad() {
+        //fix landscape issues with buttons stretching
+        [chipmunkButton, vaderButton, reverbButton, echoButton, snailButton, rabbitButton].forEach { $0.imageView?.contentMode = .ScaleAspectFit }
         super.viewDidLoad()
         setupAudio()
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(animated: Bool) {
         configureUI(.NotPlaying)
@@ -73,14 +76,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+
 
 }

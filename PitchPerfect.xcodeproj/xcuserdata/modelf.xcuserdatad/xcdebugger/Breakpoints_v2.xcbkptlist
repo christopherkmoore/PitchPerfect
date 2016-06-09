@@ -10,13 +10,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PitchPerfect/ViewController.swift"
-            timestampString = "486599028.635971"
+            timestampString = "487191442.878368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "recordAction(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PitchPerfect/PlaySoundsViewController.swift"
+            timestampString = "487191285.544519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "PlaySoundsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect.PlaySoundsViewController.chipmunkButton.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "PitchPerfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/modelf/iOS_Developer_Nanodegree/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift"
+                  timestampString = "487191286.026011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect.PlaySoundsViewController.chipmunkButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "PitchPerfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/modelf/iOS_Developer_Nanodegree/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift"
+                  timestampString = "487191286.05175"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect.PlaySoundsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; PitchPerfect.PlaySoundsViewController"
+                  moduleName = "PitchPerfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/modelf/iOS_Developer_Nanodegree/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift"
+                  timestampString = "487191286.051887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect.PlaySoundsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PitchPerfect.PlaySoundsViewController&gt;"
+                  moduleName = "PitchPerfect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/modelf/iOS_Developer_Nanodegree/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift"
+                  timestampString = "487191286.051975"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
