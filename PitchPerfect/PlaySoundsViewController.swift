@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
-    var recordedAudioURL: NSURL!
+    var recordedAudioURL: URL!
 
     
     @IBOutlet weak var chipmunkButton: UIButton!
@@ -26,32 +26,32 @@ class PlaySoundsViewController: UIViewController {
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
-    var stopTimer: NSTimer!
+    var stopTimer: Timer!
     
     
-    enum ButtonType: Int { case Slow = 0, Fast, Chipmunk, Vader, Echo, Reverb }
+    enum ButtonType: Int { case slow = 0, fast, chipmunk, vader, echo, reverb }
     
-    @IBAction func playSoundForButton(sender: UIButton) {
+    @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
-        case .Slow:
+        case .slow:
             playSound(rate: 0.5)
-        case .Fast:
+        case .fast:
             playSound(rate: 1.5)
-        case .Chipmunk:
+        case .chipmunk:
             playSound(pitch: 1000)
-        case .Vader:
+        case .vader:
             playSound(pitch: -1000)
-        case .Echo:
+        case .echo:
             playSound(echo: true)
-        case .Reverb:
+        case .reverb:
             playSound(reverb: true)
             
         }
-        configureUI(.Playing)
+        configureUI(.playing)
         print("Play button sound")
     }
     
-    @IBAction func stopButtonPressed(sender: AnyObject) {
+    @IBAction func stopButtonPressed(_ sender: AnyObject) {
         stopAudio()
         print("Stop playing sound...")
     }
@@ -60,12 +60,12 @@ class PlaySoundsViewController: UIViewController {
 
     override func viewDidLoad() {
         //fix landscape issues with buttons stretching
-        [chipmunkButton, vaderButton, reverbButton, echoButton, snailButton, rabbitButton].forEach { $0.imageView?.contentMode = .ScaleAspectFit }
+        [chipmunkButton, vaderButton, reverbButton, echoButton, snailButton, rabbitButton].forEach { $0.imageView?.contentMode = .scaleAspectFit }
         super.viewDidLoad()
         setupAudio()
     }
-    override func viewWillAppear(animated: Bool) {
-        configureUI(.NotPlaying)
+    override func viewWillAppear(_ animated: Bool) {
+        configureUI(.notPlaying)
     }
     
 
